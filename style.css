@@ -4,6 +4,13 @@
   box-sizing: border-box;
 }
 
+body {
+  font-family: "Maven Pro", sans-serif;
+  font-size: 18px;
+  width: 100vw;
+  margin: auto;
+}
+
 header {
   display: flex;
   max-width: 1240px;
@@ -39,7 +46,6 @@ nav {
 .nav-links {
   justify-content: space-evenly;
   list-style: none;
-  /*margin-right: 353px;*/
 }
 
 .push {
@@ -91,13 +97,6 @@ nav {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
-
-body {
-  font-family: "Maven Pro", sans-serif;
-  font-size: 18px;
-  width: 100vw;
-  margin: auto;
 }
 
 .contact-button {
@@ -189,9 +188,22 @@ body {
   background-color: #f3f6f9;
 }
 
-.icons img {
+.icon-split {
+  display: flex;
+}
+.icon-split img {
   max-width: 24px;
   padding-bottom: 20px;
+}
+
+.icon-split h4 {
+  padding-bottom: 20px;
+}
+
+.icon-split p {
+  font-size: 16px;
+  padding-right: 50px;
+  line-height: 30px;
 }
 
 .second-section h2 {
@@ -205,23 +217,7 @@ body {
   width: 100%;
   margin: auto;
   padding: 100px 0px;
-}
-
-.information2 table {
   text-align: left;
-}
-
-.information2 td {
-  padding: 0px 10px 20px 0px;
-}
-
-.bold-head {
-  font-weight: 900;
-}
-
-.description td {
-  font-size: 16px;
-  padding-right: 50px;
 }
 
 .bold {
@@ -286,65 +282,129 @@ footer p {
   z-index: 100;
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 480px) {
   * {
-    padding: 0 5%;
-    margin: 0%;
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
   }
 
   body {
-    width: 350px;
-  }
-
-  header {
-    width: 100%;
-    min-width: 350px;
+    font-family: "Maven Pro", sans-serif;
+    font-size: 12px;
+    max-width: 95vw;
+    margin: 0;
   }
 
   nav {
-    visibility: hidden;
+    display: none;
   }
 
   .logo-container {
-    flex: 2;
+    flex: 1;
     max-width: 120px;
     align-items: center;
-    padding: 10%;
-    margin-top: 10vh;
+    padding: 20px;
   }
 
   .logo-container img {
-    height: 60px;
-  }
-
-  video {
-    visibility: hidden;
-  }
-
-  .first-section {
-    width: 100vw;
+    height: 40px;
   }
 
   .logobar {
-    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
+    padding-top: 0px;
+    padding-bottom: 0px;
   }
 
-  .first-section {
-    margin: 0;
-    width: 100vw;
+  .logobar img {
+    min-width: 10px;
+    min-height: 0px;
+    padding: 0;
+  }
+
+  .section1-left h1 {
+    font-size: 24px;
+    font-weight: bolder;
+    text-align: left;
+    padding-bottom: 20px;
   }
 
   .section1-left {
-    margin: 0;
-    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin-right: 0;
   }
 
   .second-section {
     width: 100%;
     max-height: 700px;
-    margin: 0;
+    margin: auto;
     background-color: #f3f6f9;
+  }
+
+  .icons img {
+    max-width: 20px;
+    padding-bottom: 20px;
+  }
+
+  .second-section h2 {
+    padding-right: 45%;
+    margin-bottom: 50px;
+    font-size: 32px;
+  }
+
+  .information2 {
+    max-width: 1240px;
+    width: 100%;
+    margin: 0;
+    padding: 50px 0px;
+  }
+
+  .information2 table {
+    text-align: left;
+  }
+
+  .information2 td {
+    padding: 0px 10px 20px 0px;
+  }
+
+  .bold-head {
+    font-weight: 900;
+  }
+
+  .description td {
+    font-size: 16px;
+    padding-right: 50px;
+  }
+
+  .information2 h2 {
+    padding: 0;
+    font-size: 18px;
+  }
+
+  input {
+    display: none;
+  }
+
+  footer {
+    width: 100vw;
+    max-height: 900px;
+  }
+
+  .copyright {
+    position: absolute;
+    left: 70px;
+    bottom: -1350px;
+    z-index: 100;
+  }
+
+  table td {
+    font-size: 16px;
   }
 }
