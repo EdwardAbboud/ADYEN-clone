@@ -178,8 +178,8 @@ nav {
 }
 
 .logobar img {
-  min-width: 160px;
-  min-height: 70px;
+  max-width: 160px;
+  max-height: 70px;
 }
 
 .second-section {
@@ -394,23 +394,41 @@ footer p {
   }
 
   .logobar img {
-    max-height: 10px;
+    max-width: 115px;
+    padding: 6px;
   }
 
   .second-section {
-    max-height: 700px;
+    display: flex;
+    flex-wrap: wrap;
+    max-height: 1000px;
     margin: 0;
     background-color: #f3f6f9;
+    max-width: 390px;
+  }
+
+  .icon-split h4 {
+    padding: 0px 0px 20px;
+    font-size: 18px;
+  }
+
+  .icon-split p {
+    font-size: 15px;
+    padding-right: 10px;
+    line-height: 20px;
   }
 
   .icon {
-    width: 200px;
-    padding: 200px;
+    min-width: 100%;
+    padding: 20px;
+    justify-content: left;
   }
 
   .second-section h2 {
     margin-bottom: 50px;
     font-size: 32px;
+    max-height: 350px;
+    padding: 0px 12px;
   }
 
   .information2 {
@@ -419,19 +437,33 @@ footer p {
     padding: 50px 0px;
   }
 
-  input {
-    display: none;
+  footer {
+    max-width: 390px;
+    display: flex;
+    flex-wrap: wrap;
+    height: auto;
   }
 
-  footer {
-    width: 100vw;
-    max-height: 900px;
+  .footer-links {
+    margin: 0px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    padding-bottom: 10px;
+  }
+
+  .footer-links ul {
+    padding: 50px 20px 0px 20px;
+    width: 180px;
+  }
+
+  input {
+    width: 300px;
+    margin: 0px;
   }
 
   .copyright {
-    position: absolute;
-    left: 70px;
-    bottom: -1350px;
-    z-index: 100;
+    display: hidden;
   }
 }
