@@ -539,12 +539,19 @@ footer p {
     height: 50px;
   }
 
-  nav {
+  .nav-links {
     display: none;
   }
 
+  .burger img {
+    width: 30px;
+    display: flex;
+    padding-top: 20px;
+    margin-left: 595px;
+  }
+
   .logo-container {
-    padding: 20px 12px 0px 55px;
+    padding: 20px 12px 0px 36px;
     margin: 0px 24px 0px 0px;
   }
 
@@ -594,7 +601,7 @@ footer p {
   .information {
     height: auto;
     max-width: 768px;
-    margin: auto;
+    margin: 0 20px;
     flex-wrap: nowrap;
     padding-bottom: 20px;
   }
@@ -621,7 +628,7 @@ footer p {
     padding-top: 0px;
     padding-bottom: 30px;
     max-width: 768px;
-    margin: auto;
+    margin: 0 35px;
   }
 
   .logobar img {
@@ -635,7 +642,7 @@ footer p {
     max-height: 1000px;
     margin: auto;
     background-color: #f3f6f9;
-    width: 100vw;
+    max-width: 100%;
   }
 
   .icon-split h4 {
@@ -665,7 +672,7 @@ footer p {
 
   .information2 {
     width: 90%;
-    margin: auto;
+    margin: 20px;
     padding: 50px 0px;
   }
 
@@ -674,7 +681,7 @@ footer p {
     display: flex;
     flex-wrap: wrap;
     height: auto;
-    padding-bottom: 10px;
+    padding-bottom: 0px;
   }
 
   .footer-links {
@@ -696,6 +703,8 @@ footer p {
   }
 
   .copyright {
-    display: hidden;
+    text-align: center;
+    width: 100%;
+    height: auto;
   }
 }
