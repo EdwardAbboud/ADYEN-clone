@@ -20,6 +20,7 @@ header {
   align-items: center;
   justify-content: flex-start;
   z-index: 1;
+  padding: 0 10px;
 }
 
 .logo-container,
@@ -136,7 +137,8 @@ nav {
 }
 
 .video-container video {
-  width: 600px;
+  max-width: 600px;
+  flex-shrink: 2;
 }
 
 .information {
@@ -147,6 +149,7 @@ nav {
   max-width: 1248px;
   width: 100%;
   margin: auto;
+  padding: 0 10px;
 }
 
 .section1-left {
@@ -177,8 +180,7 @@ nav {
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  padding-top: 48px;
-  padding-bottom: 20px;
+  padding: 48px 10px 20px;
   flex-shrink: 2;
 }
 
@@ -192,6 +194,7 @@ nav {
   max-height: 700px;
   margin: auto;
   background-color: #f3f6f9;
+  padding: 0 10px;
 }
 
 .icon-split {
@@ -246,6 +249,7 @@ nav {
   height: 500px;
   font-size: 16px;
   justify-content: space-evenly;
+  padding: 0 10px;
 }
 
 .footer-links {
@@ -292,6 +296,10 @@ input::placeholder {
 footer p {
   font-size: 12px;
   padding-top: 15px;
+}
+
+.newsletter {
+  margin-right: 20px;
 }
 
 .copyright {
@@ -642,7 +650,7 @@ footer p {
     max-height: 1000px;
     margin: auto;
     background-color: #f3f6f9;
-    max-width: 100%;
+    min-width: 100%;
   }
 
   .icon-split h4 {
@@ -698,13 +706,35 @@ footer p {
   }
 
   input {
-    width: 300px;
+    max-width: 300px;
     margin: 0px;
+    flex-shrink: 2;
   }
 
   .copyright {
     text-align: center;
     width: 100%;
     height: auto;
+  }
+}
+
+@media screen and (max-width: 857px) {
+  .nav-links {
+    display: none;
+  }
+
+  .burger img {
+    width: 30px;
+    display: flex;
+    padding-top: 20px;
+    margin-left: auto;
+  }
+}
+
+@media screen and (max-width: 935px) and (orientation: landscape) {
+  body {
+    zoom: 0.9;
+    -moz-transform: scale(0.9);
+    -moz-transform-origin: 0 0;
   }
 }
